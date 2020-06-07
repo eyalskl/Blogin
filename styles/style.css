@@ -147,6 +147,7 @@ h2 {
     color: #c2c1c1;
     border: 2px solid #c2c2c2;
     transition: .3s;
+    outline: none;
 }
 
 .card-btn:hover:after,
