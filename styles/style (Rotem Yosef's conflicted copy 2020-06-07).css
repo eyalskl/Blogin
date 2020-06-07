@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* FONTS */
+
+@font-face {
+    font-family: euro;
+    src: url(../fonts/eurofurence__regular/eurof55.ttf);
+}
+
+@font-face {
+    font-family: lato;
+    src: url(../fonts/Lato/Lato-Regular.ttf);
+}
+
+
+/* BASE */
+
+html {
+    color: #606060;
+    font-family: lato, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+img {
+    /* width: 100%;
+    height: 100%; */
+    object-fit: cover;
+}
+
+button {
+    cursor: pointer;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* HEADER */
+
+.main-header {
+    background-color: #292929;
+    box-shadow: 0px 6px black;
+    margin-bottom: 6px;
+}
+
+.logo {
+    cursor: default;
+    font-family: euro;
+    font-size: 2.5rem;
+    letter-spacing: -0.8px;
+}
+
+.main-header .logo {
+    color: #fff;
+}
+
+.logo span {
+    color: #58c93a;
+}
+
+.main-nav li:first-child {
+    border-left: 1px solid #000;
+}
+
+.main-nav li {
+    border-right: 1px solid #000;
+}
+
+.main-nav li a {
+    height: 130px;
+    min-width: 130px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.main-nav li a:hover {
+    color: #58c93a;
+}
+
+.main-nav li a.active {
+    color: #58c93a;
+    box-shadow: 0px 6px 0px #58c93a;
+}
+
+
+/* MAIN */
+
+.cards-container {
+    border-right: 1px solid #e1e0e0;
+    border-left: 1px solid #e1e0e0;
+}
+
+.card:first-child {
+    padding-block-start: 80px;
+}
+
+.card {
+    margin-block-end: 80px;
+}
+
+.info {
+    padding-inline-end: 25px;
+}
+
+.card-image {
+    padding-inline-end: 45px;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    margin-bottom: 55px;
+}
+
+.card p {
+    margin: 0 0 1em;
+}
+
+.card p:last-of-type {
+    flex-grow: 1;
+}
+
+.card-btn {
+    font-size: 1rem;
+    line-height: 40px;
+    align-self: flex-start;
+    background-color: white;
+    padding: 0 28px;
+    min-width: 200px;
+    font-weight: 700;
+    border-radius: 5em;
+    color: #c2c1c1;
+    border: 2px solid #c2c2c2;
+    transition: .3s;
+}
+
+.card-btn:hover:after,
+.card-btn:hover {
+    color: #58c93a;
+    border-color: #58c93a;
+    padding-inline-start: 10px;
+    content: " →";
+}
+
+
+/* PAGES */
+
+.pages-section {
+    border: 1px solid #e1e0e0;
+    height: 75px;
+}
+
+.pages-section a {
+    color: #818181;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: color .3s;
+    height: 75px;
+}
+
+.pages-section a:first-child {
+    padding-left: 1.6rem;
+}
+
+.pages-section a:last-child {
+    padding-right: 1.6rem;
+}
+
+.pages-section a:hover {
+    color: #58c93a;
+}
+
+
+/* FOOTER */
+
+.main-footer {
+    background-color: #f8f8f8;
+    border: 1px solid #e1e0e0;
+}
+
+.footer-container {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.footer-container .logo {
+    margin-bottom: 30px;
+}
+
+.footer-container p {
+    font-size: 0.8125rem;
+    margin-bottom: 40px;
+    color: #a6a6a6;
+}
+
+.footer-container p a {
+    color: inherit;
+    font-weight: 700;
+}
+
+.social-nav a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #e5e5e5;
+    color: #ffffff;
+    border: none;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    transition: background-color .6s;
+}
+
+.social-nav a.facebook:hover {
+    background-color: #516fad;
+}
+
+.social-nav a.twitter:hover {
+    background-color: #1da1f2;
+}
+
+.social-nav a.behance:hover {
+    background-color: #0057ff;
+}
+
+.social-nav a.dribble:hover {
+    background-color: #de4f85;
+    color: #be225e;
+}
+
+
+/* HELPERS */
+
+
+/* layout */
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+
+/* flex */
+
+.flex {
+    display: flex;
+}
+
+.flex.col {
+    flex-direction: column;
+}
+
+.flex.wrap {
+    flex-wrap: wrap;
+}
+
+.flex.space-between {
+    justify-content: space-between;
+}
+
+.flex.center {
+    justify-content: center;
+}
+
+.flex.align-center {
+    align-items: center;
+}
+
+
+/* lists */
+
+.clean-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
