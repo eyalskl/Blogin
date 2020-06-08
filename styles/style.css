@@ -85,6 +85,7 @@ h2 {
     min-width: 130px;
     font-weight: 700;
     color: #ffffff;
+    transition: color .3s, box-shadow .3s;
 }
 
 .main-nav li a:hover {
@@ -334,9 +335,11 @@ h2 {
         flex-basis: 100%;
         padding: 0 0 20px 0;
     }
-    .card-btn {
+    
+    /* .card-btn {
         display: none;
-    }
+    } */
+
     .info {
         flex-basis: 100%;
     }
@@ -356,9 +359,19 @@ h2 {
     }
     .main-header button {
         display: inline-block;
-        color: #292929;
+        color: white;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 1.5rem;
         margin-inline-end: 1.25rem;
+        transition: color .3s;
     }
+
+    .main-header button:hover {
+        color: #58c93a;
+    }
+
     .menu-open .main-nav {
         transform: translateX(0);
         box-shadow: -6px 0px 14px rgba(0, 0, 0, 0.2);
