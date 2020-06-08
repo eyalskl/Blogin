@@ -315,7 +315,7 @@ h2 {
         max-width: 740px;
     }
     .card {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     img {
         width: 50%;
@@ -330,15 +330,12 @@ h2 {
         flex-wrap: wrap;
         padding: 20px;
         margin-block-end: 40px;
+        font-size: 1.05rem;
     }
     .card-image {
         flex-basis: 100%;
         padding: 0 0 20px 0;
     }
-    
-    /* .card-btn {
-        display: none;
-    } */
 
     .info {
         flex-basis: 100%;
@@ -363,7 +360,7 @@ h2 {
         background-color: transparent;
         border: none;
         outline: none;
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-inline-end: 1.25rem;
         transition: color .3s;
     }
@@ -383,7 +380,7 @@ h2 {
     .main-nav li a {
         color: black;
         height: 75px;
-        width: 200px;
+        width: 225px;
     }
     .main-nav li:first-of-type {
         border: none;
